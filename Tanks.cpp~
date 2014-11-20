@@ -1,0 +1,13 @@
+#include <Arduino.h>
+#include "Tanks.h"
+
+void setup()
+{
+  Serial.begin(9600);
+  Draw_Map();
+}
+
+void loop()
+{
+
+}
