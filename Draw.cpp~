@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "Tanks.h"
+#include "tanks.h"
 
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library
@@ -43,6 +43,6 @@ int Tank1_x = 20;
 
 void Draw_Tanks()
 {
-  tft.fillRect(TerrainH,Tank1_x,(TerrainH + 6),(Tank1_x+10),0x001F);
-  tft.fillRect(TerrainH+4,(Tank1_x+10),TerrainH+6,(Tank1_x+16),0x001F);
+  tft.fillRect(TerrainH,Tank1_x,6,10,0x001F);
+  tft.fillRect(TerrainH+4,(Tank1_x+10),2,6,0x001F);
 }
